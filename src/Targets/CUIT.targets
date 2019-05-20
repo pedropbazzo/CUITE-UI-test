@@ -1,0 +1,69 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Choose>
+    <!-- Visual Studio 2010 -->
+    <When Condition="'$(VisualStudioVersion)' == '10.0'">
+      <ItemGroup>
+      <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+        <Private>False</Private>
+        <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v10\Microsoft.VisualStudio.TestTools.UITest.Extension.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+        <Private>False</Private>
+        <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v10\Microsoft.VisualStudio.TestTools.UITesting.dll</HintPath>
+      </Reference>
+      </ItemGroup>
+    </When>
+    <!-- Visual Studio 2012 -->
+    <When Condition="'$(VisualStudioVersion)' == '11.0'">
+      <ItemGroup>
+      <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+        <Private>False</Private>
+        <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v11\Microsoft.VisualStudio.TestTools.UITest.Extension.dll</HintPath>
+      </Reference>
+      <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+        <Private>False</Private>
+        <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v11\Microsoft.VisualStudio.TestTools.UITesting.dll</HintPath>
+      </Reference>
+      </ItemGroup>
+    </When>
+    <!-- Visual Studio 2013 -->
+    <When Condition="'$(VisualStudioVersion)' == '12.0'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v12\Microsoft.VisualStudio.TestTools.UITest.Extension.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v12\Microsoft.VisualStudio.TestTools.UITesting.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <!-- Visual Studio 2015 -->
+    <When Condition="'$(VisualStudioVersion)' == '14.0'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v14\Microsoft.VisualStudio.TestTools.UITest.Extension.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v14\Microsoft.VisualStudio.TestTools.UITesting.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+    <!-- Visual Studio 2017 -->
+    <When Condition="'$(VisualStudioVersion)' == '15.0'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v15\Microsoft.VisualStudio.TestTools.UITest.Extension.dll</HintPath>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+          <HintPath>$(MSBuildThisFileDirectory)..\ThirdParty\CUIT\v15\Microsoft.VisualStudio.TestTools.UITesting.dll</HintPath>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+</Project>
